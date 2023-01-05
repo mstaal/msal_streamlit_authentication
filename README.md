@@ -1,5 +1,5 @@
-# msal_streamlit_component
-MSAL Streamlit Component
+# msal_streamlit_authentication
+MSAL Streamlit Authentication Component
 
 Based on [Microsoft MSAL JS Library](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser). See also [general docs](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-overview).
 
