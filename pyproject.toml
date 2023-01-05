@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sca-dashboard"
+name = "msal_streamlit_authentication"
 version = "1.0.1"
 description = ""
 authors = ["Michael Staal-Olsen"]
