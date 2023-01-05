@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "sca-dashboard"
+version = "1.0.1"
+description = ""
+authors = ["Michael Staal-Olsen"]
+packages=[{ include="msal_streamlit_authentication"},]
+
+[tool.poetry.dependencies]
+python = ">=3.9.12,<3.12"
+streamlit = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "6.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

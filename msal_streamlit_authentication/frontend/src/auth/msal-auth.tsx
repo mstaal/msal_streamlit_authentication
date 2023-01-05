@@ -1,17 +1,9 @@
-import { LogLevel, PublicClientApplication } from "@azure/msal-browser";
+import {BrowserAuthOptions, CacheOptions, LogLevel, PublicClientApplication} from "@azure/msal-browser";
 
-export const useMsalInstance = function (clientId: string, authority: string, cache: string) {
+export const useMsalInstance = function (auth_config: BrowserAuthOptions, cache_config: CacheOptions) {
     return new PublicClientApplication({
-        auth: {
-            clientId: clientId,
-            authority: authority, // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
-            redirectUri: "/",
-            postLogoutRedirectUri: "/"
-        },
-        cache: {
-            cacheLocation: cache, // This configures where your cache will be stored
-            storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
-        },
+        auth: auth_config,
+        cache: cache_config,
         system: {
             loggerOptions: {
                 loggerCallback: (level: LogLevel, message: string, containsPii: any) => {
