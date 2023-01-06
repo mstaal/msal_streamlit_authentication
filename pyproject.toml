@@ -3,6 +3,7 @@ name = "msal_streamlit_authentication"
 version = "1.0.3"
 description = "Streamlit Authentication library based on MSAL.JS"
 readme = "docs/description.txt"
+repository = "https://github.com/mstaal/msal_streamlit_authentication"
 authors = ["Michael Staal-Olsen"]
 packages=[
     { include="msal_streamlit_authentication" }
