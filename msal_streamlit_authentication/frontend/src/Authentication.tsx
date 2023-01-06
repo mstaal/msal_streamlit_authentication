@@ -11,6 +11,8 @@ const Authentication = ({ args }: ComponentProps) => {
     const msalInstance = useMsalInstance(args["auth"], args["cache"])
     const loginRequest = args["login_request"] ?? undefined
     const logoutRequest = args["logout_request"] ?? undefined
+    const loginButtonText = args["login_button_text"] ?? ""
+    const logoutButtonText = args["logout_button_text"] ?? ""
 
     const [loginToken, setLoginToken] = useState(null)
     const isAuthenticated = useCallback(() => {
@@ -54,7 +56,7 @@ const Authentication = ({ args }: ComponentProps) => {
     return (
         <div className="card">
             <button onClick={isAuthenticated() ? logoutPopup : loginPopup}>
-                {isAuthenticated() ? "Logout" : "Login"}
+                {isAuthenticated() ? logoutButtonText : loginButtonText}
             </button>
         </div>
     )

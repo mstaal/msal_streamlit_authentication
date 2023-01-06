@@ -1,0 +1,22 @@
+name: Build and release
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check-out repository
+        uses: actions/checkout@v3
+      - name: Use Node.js v18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install NPM dependencies
+        run: npm install --prefix msal_streamlit_authentication/frontend
+      - name: Build react project
+        run: npm run build --prefix msal_streamlit_authentication/frontend
