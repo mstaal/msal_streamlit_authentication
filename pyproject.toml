@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "msal_streamlit_authentication"
-version = "1.0.2"
+version = "1.0.3"
 description = "Streamlit Authentication library based on MSAL.JS"
 readme = "docs/description.txt"
 authors = ["Michael Staal-Olsen"]
