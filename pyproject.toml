@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "msal_streamlit_authentication"
-version = "1.0.1"
+version = "1.0.0"
 description = ""
 authors = ["Michael Staal-Olsen"]
 packages=[{ include="msal_streamlit_authentication"},]
