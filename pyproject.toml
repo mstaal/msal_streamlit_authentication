@@ -1,16 +1,15 @@
 [tool.poetry]
 name = "msal_streamlit_authentication"
-version = "1.0.1"
+version = "1.0.2"
 description = "Streamlit Authentication library based on MSAL.JS"
 readme = "docs/description.txt"
 authors = ["Michael Staal-Olsen"]
 packages=[
     { include="msal_streamlit_authentication" }
 ]
-include = [
-    "msal_streamlit_authentication/frontend/dist",
-]
+include = ["msal_streamlit_authentication/frontend/dist/**/*"]
 exclude = [
+    "msal_streamlit_authentication/frontend/index.html",
     "msal_streamlit_authentication/frontend/public",
     "msal_streamlit_authentication/frontend/src",
     "msal_streamlit_authentication/frontend/tsconfig.json",
