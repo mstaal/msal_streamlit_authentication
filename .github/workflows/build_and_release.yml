@@ -12,38 +12,38 @@ jobs:
     steps:
       - name: Check-out repository
         uses: actions/checkout@v3
-        #----------------------------------------------
-        #       setup Node.js and React
-        #----------------------------------------------
+        #-------------------------------
+        #   Setup Node.js and React
+        #-------------------------------
       - name: Use Node.js v18.x
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: Install NPM dependencies
         run: npm install --prefix msal_streamlit_authentication/frontend
-      - name: Build react project
+      - name: Build React project
         run: npm run build --prefix msal_streamlit_authentication/frontend
-        #----------------------------------------------
-        #       setup python
-        #----------------------------------------------
+        #-------------------------------
+        #   Setup python
+        #-------------------------------
       - name: Setup Python
         id: setup-python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      #----------------------------------------------
-      #  -----  install & configure poetry  -----
-      #----------------------------------------------
+        #-------------------------------
+        #   Install & configure poetry
+        #-------------------------------
       - name: Install Poetry
         uses: snok/install-poetry@v1
         with:
           virtualenvs-create: true
           virtualenvs-in-project: true
           installer-parallel: true
-      #----------------------------------------------
-      # Build and publish PyPi distribution
-      #----------------------------------------------
-      - name: build package distribution
+        #-------------------------------
+        #   Build & publish to PyPi
+        #-------------------------------
+      - name: Build package distribution
         run: poetry build --no-interaction
       - name: Publish a Python distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
