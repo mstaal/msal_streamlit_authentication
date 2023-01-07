@@ -19,8 +19,8 @@ from msal_streamlit_authentication import msal_authentication
 
 login_token = msal_authentication(
     auth={
-        "clientId": "c934c5cb-0faf-4384-80a1-c8794ea2d589",
-        "authority": "https://login.microsoftonline.com/05d75c05-fa1a-42e7-9cf1-eb416c396f2d",
+        "clientId": "aaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee",
+        "authority": "https://login.microsoftonline.com/aaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee",
         "redirectUri": "/",
         "postLogoutRedirectUri": "/"
     }, # Corresponds to the 'auth' configuration for an MSAL Instance
@@ -29,7 +29,7 @@ login_token = msal_authentication(
         "storeAuthStateInCookie": False
     }, # Corresponds to the 'cache' configuration for an MSAL Instance
     login_request={
-        "scopes": ["c934c5cb-0faf-4384-80a1-c8794ea2d589/.default"]
+        "scopes": ["aaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee/.default"]
     }, # Optional
     logout_request={}, # Optional
     login_button_text="Login", # Optional, defaults to "Login"
