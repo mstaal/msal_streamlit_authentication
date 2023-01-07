@@ -1,1 +1,0 @@
-Streamlit Authentication library based on MSAL.JS
