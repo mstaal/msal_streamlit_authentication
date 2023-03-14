@@ -38,6 +38,8 @@ login_token = msal_authentication(
 )
 st.write("Recevied login token:", login_token)
 ```
+A minimal sample project using the library can be found [here](https://github.com/mstaal/streamlit_msal_sample). Note that it is Dockerized.
+
 The component currently expects for the user to go through a popup based login flow.
 Further flows may be supported at a later time. As discussed [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/initialization.md#optional-configure-authority),
 the `protocolMode` parameter in `auth` can be used to configure OIDC providers that differ from Azure AD.
