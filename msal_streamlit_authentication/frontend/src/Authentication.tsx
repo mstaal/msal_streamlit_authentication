@@ -13,6 +13,8 @@ const Authentication = ({ args }: ComponentProps) => {
     const logoutRequest = args["logout_request"] ?? undefined
     const loginButtonText = args["login_button_text"] ?? ""
     const logoutButtonText = args["logout_button_text"] ?? ""
+    const buttonClass = args["class_name"] ?? ""
+    const buttonId = args["html_id"] ?? ""
 
     const [loginToken, setLoginToken] = useState(null)
     const isAuthenticated = useCallback(() => {
@@ -55,7 +57,7 @@ const Authentication = ({ args }: ComponentProps) => {
 
     return (
         <div className="card">
-            <button onClick={isAuthenticated() ? logoutPopup : loginPopup}>
+            <button onClick={isAuthenticated() ? logoutPopup : loginPopup} className={buttonClass} id={buttonId}>
                 {isAuthenticated() ? logoutButtonText : loginButtonText}
             </button>
         </div>

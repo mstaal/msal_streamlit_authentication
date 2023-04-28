@@ -34,6 +34,8 @@ login_token = msal_authentication(
     logout_request={}, # Optional
     login_button_text="Login", # Optional, defaults to "Login"
     logout_button_text="Logout", # Optional, defaults to "Logout"
+    class_name="css_button_class_selector", # Optional, defaults to None. Corresponds to HTML class.
+    html_id="html_id_for_button", # Optional, defaults to None. Corresponds to HTML id.
     key=1 # Optional if only a single instance is needed
 )
 st.write("Recevied login token:", login_token)
