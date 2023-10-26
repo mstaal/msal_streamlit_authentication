@@ -12,6 +12,7 @@ const Authentication = ({ args }: ComponentProps) => {
     const logoutRequest = args["logout_request"] ?? undefined
     const loginButtonText = args["login_button_text"] ?? ""
     const logoutButtonText = args["logout_button_text"] ?? ""
+    const auto_login = args["auto_login"] ?? false
     const buttonClass = args["class_name"] ?? ""
     const buttonId = args["html_id"] ?? ""
 
@@ -31,6 +32,9 @@ const Authentication = ({ args }: ComponentProps) => {
             })
         } else {
             setLoginToken(null)
+
+            console.log("loginPopup...")
+            loginPopup();
         }
     }, [])
 
@@ -56,9 +60,13 @@ const Authentication = ({ args }: ComponentProps) => {
 
     return (
         <div className="card">
-            <button onClick={isAuthenticated() ? logoutPopup : loginPopup} className={buttonClass} id={buttonId}>
+        {
+            auto_login === false ? (
+                <button onClick={isAuthenticated() ? logoutPopup : loginPopup} className={buttonClass} id={buttonId}>
                 {isAuthenticated() ? logoutButtonText : loginButtonText}
-            </button>
+                </button>
+            ) : null
+        }
         </div>
     )
 

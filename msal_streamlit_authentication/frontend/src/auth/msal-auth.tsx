@@ -26,7 +26,8 @@ export const useMsalInstance = function (auth_config: BrowserAuthOptions, cache_
                             return;
                     }
                 }
-            }
+            },
+            allowRedirectInIframe: true,
         }
     })
 }
