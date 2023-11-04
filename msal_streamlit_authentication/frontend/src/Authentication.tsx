@@ -5,7 +5,6 @@ import {
     ComponentProps,
 } from "streamlit-component-lib"
 import { useMsalInstance } from "./auth/msal-auth";
-import "./Authentication.css"
 
 const Authentication = ({ args }: ComponentProps) => {
     const msalInstance = useMsalInstance(args["auth"], args["cache"])

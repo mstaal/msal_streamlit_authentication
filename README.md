@@ -8,7 +8,7 @@ For more information on MSAL, consult the [Github project](https://github.com/Az
 
 ## Usage
 
-Below is a sample Python snippet displaying how to apply component. Visually, the component gives rise to a single button
+Below is a sample Python snippet displaying how to apply the component. Visually, the component gives rise to a single button
 in the Streamlit Dashboard with a text that depends on whether an active login session exists. The `auth` and `cache`
 parameters are entirely equivalent to the properties mentioned in the [Github documentation](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/initialization.md).
 The `login_request` and `logout_request` parameters are covered [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/login-user.md).
