@@ -10,7 +10,8 @@ COMPONENT_NAME = "msal_authentication"
 if _USE_WEB_DEV_SERVER:
     _component_func = components.declare_component(name=COMPONENT_NAME, url=_WEB_DEV_SERVER_URL)
 else:
-    build_dir = str(Path(__file__).parent / "frontend" / "dist")
+    parent_dir = os.path.dirname(os.path.abspath(__file__))
+    build_dir = os.path.join(parent_dir, "frontend", "dist")
     _component_func = components.declare_component(name=COMPONENT_NAME, path=build_dir)
 
 
