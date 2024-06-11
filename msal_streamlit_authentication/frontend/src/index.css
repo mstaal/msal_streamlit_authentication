@@ -16,6 +16,7 @@ button {
   font-size: inherit;
   font-weight: inherit;
   font-family: inherit;
+  color: inherit;
   background-color: inherit;
   cursor: pointer;
 }
