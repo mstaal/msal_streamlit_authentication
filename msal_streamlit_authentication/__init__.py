@@ -35,6 +35,6 @@ def msal_authentication(
         class_name=class_name,
         html_id=html_id,
         default=None,
-        key=key
+        key=str(key)
     )
     return authenticated_user_profile
