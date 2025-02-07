@@ -11,7 +11,7 @@
   pip install msal-streamlit-authentication
   ```
 
-  [Deploy Streamlit on Ploomber.io for Free](https://platform.ploomber.io/register/?utm_source=dash-mui&utm_medium=github) | [Examples](./example/)
+  [Deploy Streamlit on Ploomber.io for Free](https://platform.ploomber.io/register/?utm_source=dash-mui&utm_medium=github) | [Local Example](./example/local/) | [Deploy on Ploomber Example](./example/ploomber/)
 </div>
 
 ## Overview
@@ -24,7 +24,7 @@ This Streamlit component enables seamless client-side authentication using:
 Built on the [Microsoft MSAL JS Library](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), it supports any provider using OpenID Connect Authorization Code Flow (PKCE).
 
 <div align="center">
-  <img src="example/imgs/signin.png" alt="Sign In Example" width="600">
+  <img src="example/imgs/demo.png" alt="Sign In Example" width="600">
 </div>
 
 ## Quick Start
