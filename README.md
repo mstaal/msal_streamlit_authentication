@@ -1,13 +1,12 @@
 <div align="center">
   <h1 align="center"><b>Streamlit - Microsoft MSAL Authentication</b></h1>
-  <p align="center"> OpenID Connect (OIDC) authentication component for Streamlit </p>
   <img width="100" height="100" src="https://avatars.githubusercontent.com/u/60114551?s=200&v=4" alt="Ploomber Logo">
 
   A Streamlit component for Microsoft Authentication Library (MSAL) integration
 
   [![PyPI version](https://badge.fury.io/py/msal-streamlit-authentication.svg)](https://badge.fury.io/py/msal-streamlit-authentication)
 
-  ```bash
+  ```sh
   pip install msal-streamlit-authentication
   ```
 
@@ -31,10 +30,10 @@ Built on the [Microsoft MSAL JS Library](https://github.com/AzureAD/microsoft-au
 
 1. **Register Your Application**
    - [Register a Single Page Application in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-app-registration)
-   - Note your Client ID and configure redirect URIs
+   - Note your Client ID and configure redirect URIs for targeted final URI
 
 2. **Install the Package**
-   ```bash
+   ```sh
    pip install msal-streamlit-authentication
    ```
 
@@ -80,7 +79,7 @@ msal_authentication(
     logout_button_text="Logout",        # Default: "Logout"
     class_name="css_button_class",      # CSS class selector
     html_id="button_id",                # HTML ID
-    key=1                               # Streamlit component key
+    key="1"                             # Streamlit component key
 )
 ```
 
@@ -108,6 +107,7 @@ auth={
 - [MSAL Documentation](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-overview)
 - [Azure AD B2C Overview](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview#identity-providers)
 - [MSAL JS GitHub Repository](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
+- [Deploy on Ploomber](./example/ploomber/)
 
 ## Acknowledgments
 Built with inspiration from:

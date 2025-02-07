@@ -31,14 +31,14 @@ This guide walks you through protecting your Streamlit application with Microsof
    ENTRA_REDIRECT_URI=https://entra-demo.ploomber.app
    ```
 
+<div align="center">
+  <img src="../imgs/ploomber-deploy.png" alt="Ploomber Deployment Configuration" width="600">
+</div>
+
 > [!TIP]
 > **Ploomber supports custom domains & subdomains**: you can bring your own and set it up in the 
 > application settings after the first deployment. If you choose to do so, instead of `https://entra-demo.ploomber.app`, 
 > enter your custom domain.
-
-<div align="center">
-  <img src="../imgs/ploomber-deploy.png" alt="Ploomber Deployment Configuration" width="600">
-</div>
 
 ## Step 3: Deploy and Verify
 
@@ -46,7 +46,7 @@ This guide walks you through protecting your Streamlit application with Microsof
 2. Once the URL is up, navigate to your app, and it will be protected
 
 <div align="center">
-  <img src="../imgs/deploy.png" alt="Successful Deployment" width="600">
+  <img src="../imgs/ploomber-deploy.png" alt="Successful Deployment" width="600">
 </div>
 
 ## Ressources:
