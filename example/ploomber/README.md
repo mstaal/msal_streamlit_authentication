@@ -21,6 +21,7 @@ This guide walks you through protecting your Streamlit application with Microsof
 1. Navigate to [Ploomber Cloud Platform](https://www.platform.ploomber.io/applications/create)
 2. Click "New" to create a new deployment
 3. Configure the following:
+   - Upload this folder as a Zip, and choose the Streamlit Deployment
    - Application Name: Match the name entered in Entra ID so your URL match
    - If no name is provided, a random one will be assigned
     - You'll need to deploy once to get your domain in this case, then redeploy after completing all steps
