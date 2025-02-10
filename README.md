@@ -4,16 +4,24 @@
 
   A Streamlit component for Microsoft Authentication Library (MSAL) integration
 
+
   [![PyPI version](https://badge.fury.io/py/msal-streamlit-authentication.svg)](https://badge.fury.io/py/msal-streamlit-authentication)
 
   ```sh
   pip install msal-streamlit-authentication
   ```
 
-  [Deploy Streamlit on Ploomber.io for Free](https://platform.ploomber.io/register/?utm_source=dash-mui&utm_medium=github) | [Local Example](./example/local/) | [Deploy on Ploomber Example](./example/ploomber/)
+ [Example: Local Project With Docker](./example/local/) | [Example: Deploy MSAL on Ploomber](./example/ploomber/) | [Enterprise Support](https://calendly.com/edubr/ploomber-customer-support)
+
+ [Deploy Streamlit on Ploomber Cloud for Free](https://www.platform.ploomber.io/register/?utm_medium=github&utm_source=msal)
 </div>
 
+
 ## Overview
+
+> [!IMPORTANT]
+> 🏢 **Enterprise Support Available**: Looking for advanced features, SLA, or dedicated support?
+<b><a href="mailto:support@ploomber.io">Contact our team →</a></b>
 
 This Streamlit component enables seamless client-side authentication using:
 - Azure Active Directory (AAD) work and school accounts
@@ -108,6 +116,9 @@ auth={
 - [Azure AD B2C Overview](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview#identity-providers)
 - [MSAL JS GitHub Repository](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
 - [Deploy on Ploomber](./example/ploomber/)
+
+> [!TIP]
+> Deploy Streamlit apps for free on [Ploomber Cloud!](https://www.platform.ploomber.io/register/?utm_medium=github&utm_source=msal)
 
 ## Acknowledgments
 Built with inspiration from:
