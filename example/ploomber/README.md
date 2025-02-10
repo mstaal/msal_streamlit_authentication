@@ -18,7 +18,7 @@ This guide walks you through protecting your Streamlit application with Microsof
 
 ## Step 2: Deploy on Ploomber Cloud
 
-1. Navigate to [Ploomber Cloud Platform](https://www.platform.ploomber.io/applications/create)
+1. Navigate to [Ploomber Cloud Platform](https://www.platform.ploomber.io/applications/create?utm_medium=github&utm_source=msal)
 2. Click "New" to create a new deployment
 3. Configure the following:
    - Upload this folder as a Zip, and choose the Streamlit Deployment
@@ -52,8 +52,8 @@ This guide walks you through protecting your Streamlit application with Microsof
 
 ## Ressources:
 
-- [Ploomber Documentation](https://docs.cloud.ploomber.io/en/latest/intro.html)
-- [Ploomber Community](https://ploomber.io/community/)
+- [Ploomber Documentation](https://docs.cloud.ploomber.io/en/latest/intro.html?utm_medium=github&utm_source=msal)
+- [Ploomber Community](https://ploomber.io/community/?utm_medium=github&utm_source=msal)
 
 ## Local Development Setup
 
